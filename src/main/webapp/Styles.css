@@ -9,8 +9,9 @@ and open the template in the editor.
 */
 
 
-nav {
-    text-align: left;
-    border: 2px;
-    float: right;
+
+
+body
+{
+    background-color: black;
 }

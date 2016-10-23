@@ -12,19 +12,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
-        <link rel="stylesheet" type="text/css" href="/Instagrim/Styles.css" />
+        <link rel="stylesheet" type="text/css" href="/Instagrim/homepage.css" />
     </head>
     <body>
         <header>
         
-        <h1>Instagrim! </h1>
-        <h2>Your world in Black and White</h2>
+            <h1>Instagrim. Your world in black and white.</h1>
         </header>
         
         <nav>
             <ul>
-                <li class="nav"><a href="/Instagrim/upload.jsp">Upload</a></li>
-                <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
+                <li class="nav"><a href="/Instagrim/Upload">Upload</a></li>
+                <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
             </ul>
         </nav>
  
