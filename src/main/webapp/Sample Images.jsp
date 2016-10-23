@@ -18,14 +18,9 @@
         <header>
             <h1>Instagrim. Your world in black and white.</h1>
         </header>
-        <article>
-        <h1>Sample images:</h1> <br>
-        <img src="http://i.imgur.com/LhMQQA0.png" alt="Image not found." style="width:500px; height: 500px;"/>
-        <img src="http://i.imgur.com/RDQ30rP.jpg" alt="Image not found." style="width:500px; height: 500px;"/>
-        <img src="http://i.imgur.com/dQuptX6.jpg" alt="Image not found." style="width:500px; height: 500px;"/>
         <nav>
             <ul>
-                <li><a href="/Instagrim">Home</a></li> 
+                
                 <%
                     LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
                     if (lg != null)
@@ -34,24 +29,30 @@
                         if (lg.getloggedin() == true)
                         {
                 %>
-                <p>Welcome, <%=lg.getUsername()%>!</p>
+                <li id="welcome">Welcome, <%=lg.getUsername()%>!</li>
+                <li><a href="/Instagrim">Home</a></li> 
                 <li><a href="/Instagrim/Upload">Upload Images</a></li>
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
-                <li><a href="/Instagrim/Upload">Log Out</a></li>
+                <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
+                <li><a href="/Instagrim/Logout">Log Out</a></li>
                 <%
                         }
                         else
                         {%>
+                            <li><a href="/Instagrim">Home</a></li> 
+                            <li><a href="/Instagrim/Login">Login</a></li>
                             <li><a href="/Instagrim/Register">Register</a></li>
-                            <li><a href="/Instagrim/Login">Login</a></li><%
+                            <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li><%
                             
                         }
                     }
                     else
                         {
                 %>
-                <li><a href="/Instagrim/Register">Register</a></li>
+                <li><a href="/Instagrim">Home</a></li> 
                 <li><a href="/Instagrim/Login">Login</a></li>
+                <li><a href="/Instagrim/Register">Register</a></li>
+                <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
                 
                 
                 <%
@@ -60,6 +61,12 @@
                  
             </ul>
         </nav>
+        <article>
+        <h1>Sample images:</h1> <br>
+        <img src="http://i.imgur.com/LhMQQA0.png" alt="Image not found." style="width:500px; height: 500px;"/>
+        <img src="http://i.imgur.com/RDQ30rP.jpg" alt="Image not found." style="width:500px; height: 500px;"/>
+        <img src="http://i.imgur.com/dQuptX6.jpg" alt="Image not found." style="width:500px; height: 500px;"/>
+        
         </article>
         <footer>
             <ul>   

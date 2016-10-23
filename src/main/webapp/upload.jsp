@@ -16,7 +16,22 @@
     <body>
         <h1>Instagrim. Your world in black and white.</h1>
         
- 
+        <nav>
+            <ul>
+                <%
+                    LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");                     
+                %>
+                <li id="welcome">Welcome, <%=lg.getUsername()%>!</li>
+                <li><a href="/Instagrim">Home</a></li> 
+                <li><a href="/Instagrim/Upload">Upload Images</a></li>
+                <%
+                    String Username = lg.getUsername();
+                %>
+                <li><a href="/Instagrim/Images/<%=Username%>">Your Images</a></li>
+                <li class="nav"><a href="">Sample Images</a></li>
+                <li><a href="/Instagrim/Logout">Log Out</a></li>
+            </ul>
+        </nav>
         <article>
             <h1>Upload file:</h1>
             <form method="POST" enctype="multipart/form-data" action="Image">
@@ -30,17 +45,7 @@
                 <input type="text" name="description">
             </form>
         </article>
-        <nav>
-            <ul>
-                <li><a href="/Instagrim">Home</a></li> 
-                <%
-                    LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
-                    String Username = lg.getUsername();
-                %>
-                <li><a href="/Instagrim/Images/<%=Username%>">Your Images</a></li>
-                <li class="nav"><a href="">Sample Images</a></li>
-            </ul>
-        </nav>
+        
         <footer>
             <ul>
                 

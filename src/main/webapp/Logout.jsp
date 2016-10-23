@@ -10,12 +10,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="homepage.css" />
         <title>Logout</title>
     </head>
     <body>
         <header>
             <h1>Instagrim. Your world in black and white.</h1>
         </header>
+        <nav>
+                <ul>
+                    <li><a href="/Instagrim">Back to Home</a></li>
+                </ul>
+            </nav>
         <article>
             <h1>You have been successfully logged out.</h1>
             <%
@@ -23,10 +29,6 @@
                 lg.setloggedout();
             %>     
             
-            <nav>
-                <ul>
-                    <li><a href="/Instagrim">Back to Home</a></li>
-                </ul>
-            </nav>
+            
     </body>
 </html>

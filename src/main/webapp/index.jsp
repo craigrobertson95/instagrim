@@ -28,8 +28,9 @@
                         if (lg.getloggedin() == true)
                         {
                 %>
-                <h1>Welcome, <%=lg.getUsername()%>!</h1>
+                
                 <ul>
+                <li id="welcome">Welcome, <%=lg.getUsername()%>!</li>
                 <li><a href="/Instagrim">Home</a></li> 
                 <li><a href="/Instagrim/Upload">Upload Images</a></li>
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
@@ -45,8 +46,8 @@
                         {%>
                             <ul>
                             <li><a href="/Instagrim">Home</a></li> 
-                            <li><a href="/Instagrim/Register">Register</a></li>
                             <li><a href="/Instagrim/Login">Login</a></li>
+                            <li><a href="/Instagrim/Register">Register</a></li>            
                             <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
                             </ul><%
                         }
@@ -56,8 +57,8 @@
                 %>
                 <ul>
                 <li><a href="/Instagrim">Home</a></li> 
-                <li><a href="/Instagrim/Register">Register</a></li>
                 <li><a href="/Instagrim/Login">Login</a></li>
+                <li><a href="/Instagrim/Register">Register</a></li>
                 <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
                 </ul>
                 <%
