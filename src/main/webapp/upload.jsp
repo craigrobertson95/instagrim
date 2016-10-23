@@ -40,10 +40,7 @@
                 <br/>
                 <input type="submit" value="Press"> to upload the file! 
             </form><br>
-            <form>
-                Add a description:<br>
-                <input type="text" name="description">
-            </form>
+            
         </article>
         <img id="panda" src="http://i.imgur.com/Se26nzR.png" alt="File not found"/>
         <footer>

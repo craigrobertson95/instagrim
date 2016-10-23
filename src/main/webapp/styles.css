@@ -15,7 +15,7 @@ body
 
 #panda
 {
-    display: block;
+    display: block; /*https://www.w3.org/Style/Examples/007/center.en.html was used here*/
     
     position: absolute;
     top: 35%;
@@ -29,8 +29,18 @@ h1
     font-family: Verdana;
 }
 
+form
+{
+    font-family: Verdana;
+}
+
+input
+{
+    font-family: Verdana;
+}
 p{
-    color: black
+    color: black;
+    font-family: Verdana;
 }
 nav 
 {
