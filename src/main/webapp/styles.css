@@ -13,6 +13,16 @@ body
     background-color: white;
 }
 
+#panda
+{
+    display: block;
+    
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    margin-right: -50%;
+}
+
 h1
 {
     color: black;
@@ -35,7 +45,7 @@ nav
     color: gray;
 }
 
-li  /*the following menu bar CSS layout based on and built upon http://www.w3schools.com/css/css_navbar.asp's helpful guide' */
+li  /*the following menu bar CSS layout based on and built upon http://www.w3schools.com/css/css_navbar.asp's helpful guide */
 {
     float: left;
     

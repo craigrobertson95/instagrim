@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="homepage.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
         <title>Sample Images</title>
     </head>
     <body>

@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
-        <link rel="stylesheet" type="text/css" href="homepage.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
         <header>
@@ -37,7 +37,7 @@
             </form>
 
         </article>
-        
+        <img id="panda" src="http://i.imgur.com/Se26nzR.png" alt="File not found"/>
         <footer>
             <ul>
                 
