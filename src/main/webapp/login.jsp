@@ -23,7 +23,7 @@
         
         
         <article>
-            <h3>Login</h3>
+            <h1>Login:</h1>
             
             <form method="POST"  action="Login">
                 <ul>

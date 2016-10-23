@@ -19,7 +19,7 @@
       
        
         <article>
-            <h3>Register as user</h3>
+            <h1>Register as user:</h1>
             <form method="POST"  action="Register">
                 <ul>
                     <li>Username <input type="text" name="username"></li>

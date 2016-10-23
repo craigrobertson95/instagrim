@@ -11,7 +11,7 @@ package uk.ac.dundee.computing.aec.instagrim.stores;
  * @author Administrator
  */
 public class LoggedIn {
-    boolean loggedin=false;
+    public boolean loggedin=false;
     String Username=null;
     public void loggedIn(){
         

@@ -19,33 +19,47 @@
             <h1>Instagrim. Your world in black and white.</h1>
         </header>
         <nav>
-            <ul>
-                <li><a href="/Instagrim">Home</a></li> 
+            
                 <%
                     LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
                     if (lg != null)
                     {
                         String Username = lg.getUsername();
-                        if (lg.getloggedin())
+                        if (lg.getloggedin() == true)
                         {
                 %>
-                <p>Welcome, <%=lg.getUsername()%>!</p>
+                <h1>Welcome, <%=lg.getUsername()%>!</h1>
+                <ul>
+                <li><a href="/Instagrim">Home</a></li> 
                 <li><a href="/Instagrim/Upload">Upload Images</a></li>
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
-                <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
-               
+                <li><a href="/Instagrim/SampleImages">Sample Images</a></li>
+                <li><a href="/Instagrim/Logout">Log Out</a></li>
+                
+                </ul>
                     
-                    
+                   
                 <%
+                        }
+                        else
+                        {%>
+                            <ul>
+                            <li><a href="/Instagrim">Home</a></li> 
+                            <li><a href="/Instagrim/Register">Register</a></li>
+                            <li><a href="/Instagrim/Login">Login</a></li>
+                            <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
+                            </ul><%
                         }
                     }
                     else
                         {
                 %>
+                <ul>
+                <li><a href="/Instagrim">Home</a></li> 
                 <li><a href="/Instagrim/Register">Register</a></li>
                 <li><a href="/Instagrim/Login">Login</a></li>
                 <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
-                
+                </ul>
                 <%
                         }
                 %>
