@@ -57,7 +57,7 @@ protected void doGet (HttpServletRequest request, HttpServletResponse response)
         us.setCluster(cluster);
         us.RegisterUser(username, password);
         
-	response.sendRedirect("/Instagrim");
+	response.sendRedirect("/Instagrim/Login");
         
     }
 

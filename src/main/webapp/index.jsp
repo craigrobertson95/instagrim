@@ -20,6 +20,7 @@
         </header>
         <nav>
             <ul>
+                <li><a href="/Instagrim">Home</a></li> 
                 <%
                     LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
                     if (lg != null)
@@ -28,11 +29,13 @@
                         if (lg.getloggedin())
                         {
                 %>
-                <p>Welcome, <%=lg.getUsername()%>.</p>
+                <p>Welcome, <%=lg.getUsername()%>!</p>
                 <li><a href="/Instagrim/Upload">Upload Images</a></li>
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
                 <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
-                <li><a href="/Instagrim/Upload">Log Out</a></li>
+               
+                    
+                    
                 <%
                         }
                     }
@@ -50,8 +53,7 @@
             </ul>
         </nav>
         <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>                
+            <ul>               
                 <p id="authors"><i>&copy; Andy Cobley / Craig Robertson</i></p>
             </ul>
         </footer>

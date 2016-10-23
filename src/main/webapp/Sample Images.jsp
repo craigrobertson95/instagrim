@@ -18,8 +18,14 @@
         <header>
             <h1>Instagrim. Your world in black and white.</h1>
         </header>
+        <article>
+        <h1>Sample images:</h1> <br>
+        <img src="http://i.imgur.com/LhMQQA0.png" alt="Image not found." style="width:500px; height: 500px;"/>
+        <img src="http://i.imgur.com/RDQ30rP.jpg" alt="Image not found." style="width:500px; height: 500px;"/>
+        <img src="http://i.imgur.com/dQuptX6.jpg" alt="Image not found." style="width:500px; height: 500px;"/>
         <nav>
             <ul>
+                <li><a href="/Instagrim">Home</a></li> 
                 <%
                     LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
                     if (lg != null)
@@ -28,7 +34,7 @@
                         if (lg.getloggedin())
                         {
                 %>
-                <p>Welcome, <%=lg.getUsername()%>.</p>
+                <p>Welcome, <%=lg.getUsername()%>!</p>
                 <li><a href="/Instagrim/Upload">Upload Images</a></li>
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
                 <li><a href="/Instagrim/Upload">Log Out</a></li>
@@ -48,12 +54,9 @@
                  
             </ul>
         </nav>
-        <img src="http://i.imgur.com/LhMQQA0.png" alt="Image not found."/>
-        <img src="http://i.imgur.com/RDQ30rP.jpg" alt="Image not found."/>
-        <img src="http://i.imgur.com/dQuptX6.jpg" alt="Image not found."/>
+        </article>
         <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
+            <ul>   
                 <p id="authors"><i>&copy; Andy Cobley / Craig Robertson</i></p>
             </ul>
         </footer>

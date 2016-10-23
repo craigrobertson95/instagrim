@@ -20,15 +20,10 @@
             <h1>Instagrim. Your world in black and white.</h1>
         </header>
         
-        <nav>
-            <ul>
-                <li class="nav"><a href="/Instagrim/Upload">Upload</a></li>
-                <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
-            </ul>
-        </nav>
+        
  
         <article>
-            <h1>Your Pics</h1>
+            <h1>Your pictures:</h1>
         <%
             java.util.LinkedList<Pic> lsPics = (java.util.LinkedList<Pic>) request.getAttribute("Pics");
             if (lsPics == null) {
@@ -48,9 +43,16 @@
             }
         %>
         </article>
+        <nav>
+            <ul>
+                <li><a href="/Instagrim">Home</a></li> 
+                <li class="nav"><a href="/Instagrim/Upload">Upload</a></li>
+                <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
+            </ul>
+        </nav>
         <footer>
             <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
+                <p id="authors"><i>&copy; Andy Cobley / Craig Robertson</i></p>
             </ul>
         </footer>
     </body>

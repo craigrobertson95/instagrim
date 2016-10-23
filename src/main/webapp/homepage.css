@@ -18,12 +18,13 @@ h1
     color: black;
 }
 
-nav {
+p{
+    color: black
+}
+nav 
+{
     text-align: left;
     border: 2px;
-    float: right;
-    color: white;
-    
 }
 
 #authors
@@ -31,4 +32,9 @@ nav {
     position: absolute;
     bottom: 0;
     color: gray;
+}
+
+li 
+{
+    
 }

@@ -16,12 +16,7 @@
         <header>
         <h1>Instagrim. Your world in black and white.</h1>
         </header>
-        <nav>
-            <ul>
-                
-               <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
-            </ul>
-        </nav>
+      
        
         <article>
             <h3>Register as user</h3>
@@ -31,13 +26,20 @@
                     <li>Password <input type="password" name="password"></li>
                 </ul>
                 <br/>
-                <input type="submit" value="Register"> 
+                <input type="submit" value="Register" > 
             </form>
 
         </article>
+        <nav>
+            <ul>
+                <li><a href="/Instagrim">Home</a></li> 
+                <li><a href="/Instagrim/Login">Login</a></li>
+               <li class="nav"><a href="/Instagrim/SampleImages">Sample Images</a></li>
+            </ul>
+        </nav>
         <footer>
             <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
+                
                 <p id="authors"><i>&copy; Andy Cobley / Craig Robertson</i></p>
             </ul>
         </footer>

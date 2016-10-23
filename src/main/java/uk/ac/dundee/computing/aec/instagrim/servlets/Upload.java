@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import uk.ac.dundee.computing.aec.instagrim.models.User;
 
 /**
  *
@@ -28,7 +29,6 @@ protected void doGet (HttpServletRequest request, HttpServletResponse response)
         RequestDispatcher rd=request.getRequestDispatcher("/upload.jsp");
         rd.forward(request, response);
     }
-    
     
 
 }

@@ -15,19 +15,10 @@
     </head>
     <body>
         <h1>Instagrim. Your world in black and white.</h1>
-        <nav>
-            <ul>
-                <%
-                    LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
-                    String Username = lg.getUsername();
-                %>
-                <li><a href="/Instagrim/Images/<%=Username%>">Your Images</a></li>
-                <li class="nav"><a href="">Sample Images</a></li>
-            </ul>
-        </nav>
+        
  
         <article>
-            <h3>File Upload</h3>
+            <h3>Upload file</h3>
             <form method="POST" enctype="multipart/form-data" action="Image">
                 File to upload: <input type="file" name="upfile"><br/>
 
@@ -36,9 +27,20 @@
             </form>
 
         </article>
+        <nav>
+            <ul>
+                <li><a href="/Instagrim">Home</a></li> 
+                <%
+                    LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
+                    String Username = lg.getUsername();
+                %>
+                <li><a href="/Instagrim/Images/<%=Username%>">Your Images</a></li>
+                <li class="nav"><a href="">Sample Images</a></li>
+            </ul>
+        </nav>
         <footer>
             <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
+                
                 <p id="authors"><i>&copy; Andy Cobley / Craig Robertson</i></p>
             </ul>
         </footer>

@@ -6,6 +6,7 @@
 
 package uk.ac.dundee.computing.aec.instagrim.servlets;
 
+
 import com.datastax.driver.core.Cluster;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -30,7 +31,7 @@ public class Login extends HttpServlet {
 
     Cluster cluster=null;
 
-
+    
     public void init(ServletConfig config) throws ServletException {
         // TODO Auto-generated method stub
         cluster = CassandraHosts.getCluster();
