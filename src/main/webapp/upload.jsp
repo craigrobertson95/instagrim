@@ -18,14 +18,17 @@
         
  
         <article>
-            <h3>Upload file</h3>
+            <h1>Upload file:</h1>
             <form method="POST" enctype="multipart/form-data" action="Image">
                 File to upload: <input type="file" name="upfile"><br/>
 
                 <br/>
                 <input type="submit" value="Press"> to upload the file! 
+            </form><br>
+            <form>
+                Add a description:<br>
+                <input type="text" name="description">
             </form>
-
         </article>
         <nav>
             <ul>

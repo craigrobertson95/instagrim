@@ -28,7 +28,7 @@
             java.util.LinkedList<Pic> lsPics = (java.util.LinkedList<Pic>) request.getAttribute("Pics");
             if (lsPics == null) {
         %>
-        <p>No Pictures found</p>
+        <p>Sorry, no pictures found.</p>
         <%
         } else {
             Iterator<Pic> iterator;
